@@ -22,11 +22,4 @@ rustPlatform.buildRustPackage rec {
   buildInputs = [ libsixel libxcb pkg-config openssl ];
 
   doCheck = false;
-
-  meta = with lib; {
-    description = "An aesthetically pleasing YouTube TUI written in Rust";
-    homepage = "https://siriusmart.github.io/youtube-tui";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ Ruixi-rebirth ];
-  };
 }
